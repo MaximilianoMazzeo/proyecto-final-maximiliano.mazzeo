@@ -1,0 +1,124 @@
+/* reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*estilos generales*/
+body {
+  color: #c08acc;
+  font-family: "Madimi One", sans-serif;
+  /*estilos de productos*/
+  /*estilo de imagen, descripcion y precio de producto*/
+}
+body .banner {
+  width: 100%;
+}
+body h1 {
+  padding: 20px;
+}
+body .producto-imagen {
+  padding: 40px;
+  /*grilla de productos mobile*/
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+  /*grilla  de productos tablet*/
+  /*grilla de productos escritorio*/
+}
+@media screen and (min-width: 768px) {
+  body .producto-imagen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .producto-imagen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+  }
+}
+body .imagen {
+  border-radius: 10px;
+  box-shadow: #c08acc -10px -10px 20px;
+  width: 100%;
+}
+body .precio {
+  padding-left: 320px;
+  margin-top: -30px;
+}
+body .descripcion {
+  padding-left: 10px;
+}
+
+/*estilos generales de inicio*/
+.inicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1f;
+  }
+}
+.inicio .img-inicio {
+  border-radius: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .inicio .img-inicio {
+    width: 50%;
+  }
+}
+.inicio .mejores-calzados {
+  margin-top: 30px;
+}
+
+.guia-de-talles {
+  text-align: center;
+}
+
+.quienes-somos {
+  text-align: center;
+}
+
+/*estilos de footer*/
+footer {
+  text-align: center;
+}
+
+body header .bg-colordefondo {
+  background-color: #c08acc;
+}
+body header .bg-colordefondo ul li .menu-hover:hover {
+  background-color: #c08acc;
+}
+
+body .ubicacion-fabrica {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

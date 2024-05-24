@@ -1,0 +1,139 @@
+
+@import "./mediaqueries/media-queries";
+
+/* reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+body{ color: #c08acc;
+    font-family: "Madimi One", sans-serif;
+  
+    .banner{ width: 100%;}
+   
+   
+ /*estilos de productos*/  
+    h1{
+    padding: 20px;
+}
+    .producto-imagen{
+        padding: 40px;
+        /*grilla de productos mobile*/
+        display: grid;
+        grid-template-columns: repeat( 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 10px; 
+        /*grilla  de productos tablet*/
+        @include tablet{   
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+                      }
+        /*grilla de productos escritorio*/
+         @include escritorio{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+                     }
+       
+                     }
+         /*estilo de imagen, descripcion y precio de producto*/
+              .imagen{ border-radius: 10px;
+                box-shadow: #c08acc -10px -10px 20px ;
+                width: 100%;
+                    }
+            
+              .precio {
+                padding-left: 320px;
+                margin-top: -30px; 
+                     }
+              .descripcion{ 
+                        padding-left: 10px
+                                 }
+
+
+}
+
+/*estilos generales de inicio*/
+
+.inicio{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px
+         } 
+        
+        
+    @include escritorio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1f
+    }
+    
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    
+        
+        
+        .img-inicio{border-radius: 10px;
+        width: 100%;
+        @include escritorio{
+            width: 50%;
+        }
+        }
+        .mejores-calzados{
+            margin-top: 30px;
+        }
+
+       }
+
+       .guia-de-talles{
+        text-align: center;
+       }
+.quienes-somos{
+    text-align: center;
+}
+ /*estilos de footer*/
+    footer{
+        text-align: center;
+    }
+        
+body{
+    header{
+        .bg-colordefondo{
+            background-color: #c08acc;
+            ul {
+                li{ .menu-hover:hover{background-color: #c08acc; }
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+body{
+    .ubicacion-fabrica{
+        text-align: center;
+    }
+}
+        
+    
+    
+
+
+
+    
